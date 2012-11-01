@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_gov_dhs_efile_domain_Applicant" modelAttribute="applicant" path="/applicants" versionField="Version" z="u6OgA5uWC6hrl1uu5eEnsZUoVoM=">
+        <field:input field="fname" id="c_gov_dhs_efile_domain_Applicant_fname" required="true" z="Z0sgfxtZOiFfjI+lRX+V1wfWDdM="/>
+        <field:input field="lname" id="c_gov_dhs_efile_domain_Applicant_lname" required="true" z="/igyPQTNE58aK7765T9yzYN3kUc="/>
+        <field:datetime dateTimePattern="${applicant_dob_date_format}" field="dob" id="c_gov_dhs_efile_domain_Applicant_dob" required="true" z="xqgm6/1nJ9kEqRawo2Y5ILMq/Fk="/>
+        <field:input field="ssn" id="c_gov_dhs_efile_domain_Applicant_ssn" required="true" validationMessageCode="field_invalid_integer" z="eYKdwWXSb2S438Rymzn+UQkSy5I="/>
+        <field:input field="email" id="c_gov_dhs_efile_domain_Applicant_email" required="true" validationMessageCode="field_invalid_email" z="czLgp4+XQ4hJ9t84lcLi59L/6RY="/>
+        <field:input field="password" id="c_gov_dhs_efile_domain_Applicant_password" required="true" z="CmSA9Zm6SxfxFF47Ys9wJNeqfK8="/>
+    </form:update>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_gov_dhs_efile_domain_Applicant" items="${applicants}" z="B+k61Rn0VULXglTJFbeihODAC+g=">
+        <table:table data="${applicants}" id="l_gov_dhs_efile_domain_Applicant" path="/applicants" z="Ul/G1TKzOjPzfzDioplMO3uBEuk=">
+            <table:column id="c_gov_dhs_efile_domain_Applicant_fname" property="fname" z="Pklvw2Ss3D3CdBcQPvoeTT0rEj0="/>
+            <table:column id="c_gov_dhs_efile_domain_Applicant_lname" property="lname" z="OCC9ORrNe3PzIZSzHXBEvzdyehk="/>
+            <table:column date="true" dateTimePattern="${applicant_dob_date_format}" id="c_gov_dhs_efile_domain_Applicant_dob" property="dob" z="+BY/um9E+CwZN8/FR44RsbBMBCo="/>
+            <table:column id="c_gov_dhs_efile_domain_Applicant_ssn" property="ssn" z="kMd+Wef7lwehrL4JmfdBs2ISzWE="/>
+            <table:column id="c_gov_dhs_efile_domain_Applicant_email" property="email" z="UB4FF/xyARz0AtfBNzmvfdlnoJQ="/>
+            <table:column id="c_gov_dhs_efile_domain_Applicant_password" property="password" z="cJ1B19sJZrMPI1CqwTP3y6WIzhI="/>
+        </table:table>
+    </page:list>
+</div>

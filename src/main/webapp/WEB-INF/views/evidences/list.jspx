@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_gov_dhs_efile_domain_Evidence" items="${evidences}" z="j+pekiox4Fw0lnynMayttHkwp7I=">
+        <table:table data="${evidences}" id="l_gov_dhs_efile_domain_Evidence" path="/evidences" z="6u2rvekTq+oA3eMa5PpSyuOOrgM=">
+            <table:column id="c_gov_dhs_efile_domain_Evidence_filepath" property="filepath" z="VzyswwmMh99EMHmTi2skvyKcTAo="/>
+            <table:column id="c_gov_dhs_efile_domain_Evidence_filesize" property="filesize" z="ESBo2EYj9atMazaU12gFZi97NKg="/>
+            <table:column id="c_gov_dhs_efile_domain_Evidence_contentType" property="contentType" z="Q4OmcUHUXHR0rpsHPfN8SvdZd+c="/>
+            <table:column id="c_gov_dhs_efile_domain_Evidence_content" property="content" z="qTHyqLVENFBHlCauorZYie2KXFg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_gov_dhs_efile_domain_Applicant" object="${applicant}" path="/applicants" z="JA8N99JMM9AqR8YzxVXpzU/EUMw=">
+        <field:display field="fname" id="s_gov_dhs_efile_domain_Applicant_fname" object="${applicant}" z="uS8sJLZXcvoBEuiQHi/TR77PlGs="/>
+        <field:display field="lname" id="s_gov_dhs_efile_domain_Applicant_lname" object="${applicant}" z="DzJ6+yuckwkMY/J32EKW1JFnG84="/>
+        <field:display date="true" dateTimePattern="${applicant_dob_date_format}" field="dob" id="s_gov_dhs_efile_domain_Applicant_dob" object="${applicant}" z="yEda4HuYxw/GwQ503WxZSY8+TOw="/>
+        <field:display field="ssn" id="s_gov_dhs_efile_domain_Applicant_ssn" object="${applicant}" z="ar0AFYuBpRZ2tXgYo6liZk89Pj8="/>
+        <field:display field="email" id="s_gov_dhs_efile_domain_Applicant_email" object="${applicant}" z="KtwrXjjNQ57HaWILp/Wku50Q6RI="/>
+        <field:display field="password" id="s_gov_dhs_efile_domain_Applicant_password" object="${applicant}" z="NfOLx3+/PTnS0lqCgAzlKa70Mzg="/>
+    </page:show>
+</div>

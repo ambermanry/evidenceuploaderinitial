@@ -1,0 +1,35 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-26 16:03:39
+project --topLevelPackage gov.dhs.efile --projectName EvidenceUploader --java 6 --packaging WAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-26 16:03:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-26 16:03:52
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-26 16:29:27
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-29 14:56:31
+jpa setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE
+entity jpa --class ~.domain.Applicant --testAutomatically
+field string --fieldName fname --notNull
+field string --fieldName lname --notNull
+field date --fieldName dob --type java.util.Date --notNull
+field number --fieldName ssn --type java.lang.Integer --notNull
+field string --fieldName email --notNull
+field string --fieldName password --notNull
+entity jpa --class ~.domain.Evidence --testAutomatically
+field string --fieldName filepath --notNull true --sizeMax 128
+field number --type long --fieldName filesize --notNull true
+field string --fieldName contentType --notNull true
+web mvc setup
+web mvc all --package ~.web
+perform tests
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-29 15:35:00
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-29 15:44:39
+perform tests
+perform tests
+jpa setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE
+perform tests
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-29 16:05:24
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-29 16:13:21
+perform tests
+perform tests
+security setup
+selenium test --controller ~.web.ApplicantController
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-29 16:47:42
